@@ -1,22 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 * {
   margin: 0;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   padding: 0;
   box-sizing: border-box;
 }
 
-#root{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    right: 0;
+#root {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
   display: block;
   width: 100%;
   margin: 0;
@@ -33,7 +34,7 @@ form {
   justify-content: space-between;
 }
 
-input[name='messages'] {
+input[name="messages"] {
   width: 80%;
   height: 50px;
   background: #f5f5f5;
@@ -63,7 +64,7 @@ button {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  color: #FFF;
+  color: #fff;
   border: none;
   position: absolute;
   bottom: 0;
@@ -80,46 +81,46 @@ ul {
 }
 
 ul li {
-    display: block;
-    padding: 5px 0;
+  display: block;
+  padding: 5px 0;
 }
 
 strong {
-    font-size:12px;
-    display: block;
-    color: #cccccc;
+  font-size: 12px;
+  display: block;
+  color: #cccccc;
 }
 
-p{
-    border-radius: 5px;
-    position: relative;
-    padding: 5px;
-    font-size: 13px;
-    color: #333;
-    background: #f5f5f5;
-    display: inline-block;
-    margin-top: 5px;
+p {
+  border-radius: 5px;
+  position: relative;
+  padding: 5px;
+  font-size: 13px;
+  color: #333;
+  background: #f5f5f5;
+  display: inline-block;
+  margin-top: 5px;
 }
 
-p:before{
-    content: '';
-    display: block;
-    left: 5px;
-    top: -3px;
-    width: 5px;
-    height: 5px;
-    transform: rotate(45deg);
-    background: #f5f5f5;
-    position: absolute;
+p:before {
+  content: "";
+  display: block;
+  left: 5px;
+  top: -3px;
+  width: 5px;
+  height: 5px;
+  transform: rotate(45deg);
+  background: #f5f5f5;
+  position: absolute;
 }
 
-.login{
+.login {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(000,000,000,.8);
+  background: rgba(000, 000, 000, 0.8);
   flex-wrap: wrap;
   display: flex;
   align-items: center;
@@ -135,7 +136,7 @@ p:before{
   position: relative;
 }
 
-.entry{
+.entry {
   display: flex;
   justify-content: center;
   align-items: center;

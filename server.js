@@ -1,6 +1,4 @@
 const express = require('express');
-const path = require('path');
-
 const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
@@ -10,6 +8,8 @@ server.listen('8080', () => console.log('Server run'));
 let allmessages = []
 
 io.on('connection', socket => {
+
+  socket.emit('updateMessages', allmessages)
 
   socket.on('logeed', name => {
     socket.broadcast.emit('newLogin', name);
