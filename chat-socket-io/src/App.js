@@ -47,7 +47,7 @@ function App() {
             socket.emit('SendMessage', { 
                 Textmessages, 
                 name: myName,
-                entry: false 
+                entry: false
             });
 
             setMessages(array => [...array, {
