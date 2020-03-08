@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Login from './login'
 import io from 'socket.io-client';
 
-const socket = io('https://8080-bf88c036-46d0-4c27-8b09-ede179829b35.ws-us02.gitpod.io/');
+const socket = io('https://8080-acf4d1e3-adca-4dbd-aeba-b30ed57f9e1c.ws-us02.gitpod.io/');
 
 function App() {
 
@@ -10,6 +10,17 @@ function App() {
     const [logged, setLogged] = useState(false);
     const [myName, setMyName] = useState(false);
     const [reset, setReset] = useState('');
+
+    useEffect(() => {
+
+        const mergeState = message => setMessages(message);
+        
+        socket.on('hystoricMessages', mergeState);
+
+        return () => socket.off('hystoricMessages', mergeState);
+
+    }, [messages]);
+    
 
     useEffect(() => {
 

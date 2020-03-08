@@ -9,7 +9,7 @@ let allmessages = []
 
 io.on('connection', socket => {
 
-  socket.emit('updateMessages', allmessages)
+  socket.emit('hystoricMessages', allmessages)
 
   socket.on('logeed', name => {
     socket.broadcast.emit('newLogin', name);
