@@ -1,5 +1,5 @@
 tasks:
   - init: yarn install
-    command: yarn run start && cd chat-socket-io && yarn start
+    command: yarn run start
     command: cd chat-socket-io && yarn start
 image: gitpod/workspace-full
